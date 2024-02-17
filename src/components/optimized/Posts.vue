@@ -21,12 +21,18 @@ onMounted(async() => {
 </script>
 
 <template>
-  <section>
-    <VirtualList  v-if="hasPosts"
-                  :dataSources="posts"
-                  :dataComponent="Post"
-                  :keeps="50"
-                  dataKey="id"/>
-    <p  v-else>Loading ...</p>
+  <VirtualList  v-if="hasPosts"
+                :dataSources="posts"
+                :dataComponent="Post"
+                :keeps="50"
+                dataKey="id"
+                wrapTag="section"
+                itemTag="article"
+                itemClass="is-flex is-flex-direction-column"
+                itemStyle="margin: 1rem 2rem;"/>
+  <section  v-else>
+    <article>
+      <p>Loading ...</p>
+    </article>
   </section>
 </template>
