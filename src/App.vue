@@ -10,4 +10,4 @@ import Posts from "./components/Posts.vue"
           class="is-flex is-justify-content-center">
     <Posts />
   </main>
-</template>
+</template>d
