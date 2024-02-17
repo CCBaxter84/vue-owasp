@@ -21,11 +21,11 @@ onMounted(async() => {
 
 <template>
   <section>
-    <div  v-if="hasPosts">
+    <template v-if="hasPosts">
       <Post v-for="post in posts"
             :key="post.id"
             :post="post"/>
-    </div>
-    <p  v-else>Loading ...</p>
+    </template>
+    <p v-else>Loading ...</p>
   </section>
 </template>
