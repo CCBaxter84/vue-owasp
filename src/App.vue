@@ -1,7 +1,7 @@
 <script setup>
-// import Posts from "./components/naive/Posts.vue"
+import Posts from "./components/naive/Posts.vue"
 // import Posts from "./components/better/Posts.vue"
-import Posts from "./components/optimized/Posts.vue"
+// import Posts from "./components/optimized/Posts.vue"
 </script>
 
 <template>
