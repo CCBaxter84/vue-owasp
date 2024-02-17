@@ -22,12 +22,11 @@ onMounted(async() => {
 
 <template>
   <section>
-    <template v-if="hasPosts">
-    <VirtualList  :dataSources="posts"
+    <VirtualList  v-if="hasPosts"
+                  :dataSources="posts"
                   :dataComponent="Post"
                   :keeps="50"
                   dataKey="id"/>
-    </template>
     <p  v-else>Loading ...</p>
   </section>
 </template>
