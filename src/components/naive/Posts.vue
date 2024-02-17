@@ -9,7 +9,13 @@ const hasPosts = computed(() => {
 
 onMounted(async() => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-  posts.value = await res.json()
+  const initialPosts = await res.json()
+  posts.value = initialPosts.map(post => {
+    return { 
+      ...post, 
+      title: post.title.toUpperCase() 
+    }
+  })
 })
 </script>
 

@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue"
 const props = defineProps({
-  source: {
+  post: {
     type: Object,
     required: true
   }
@@ -11,7 +11,7 @@ const props = defineProps({
 <template>
   <article  style="margin: 1rem 2rem;"
             class="is-flex is-flex-direction-column">
-    <h2>{{ props.source.title }}</h2>
-    <p>{{ props.source.body }}</p>
+    <h2>{{ props.post.title }}</h2>
+    <p>{{ props.post.body }}</p>
   </article>
 </template>
