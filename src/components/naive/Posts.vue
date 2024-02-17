@@ -21,8 +21,7 @@ onMounted(async() => {
 
 <template>
   <section>
-    <div  v-if="hasPosts"
-              style="max-height: 50vh; overflow-y: scroll;">
+    <div  v-if="hasPosts">
       <Post v-for="post in posts"
             :key="post.id"
             :post="post"/>
