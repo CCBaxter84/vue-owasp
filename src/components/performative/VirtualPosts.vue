@@ -1,7 +1,7 @@
 <script setup>
 import VirtualList from "vue3-virtual-scroll-list"
 import { ref, onMounted, computed } from "vue"
-import DummyPost from "./DummyPost.vue"
+import Post from "./Post.vue"
 
 const posts = ref([])
 const hasPosts = computed(() => {
@@ -24,7 +24,7 @@ onMounted(async() => {
   <section>
     <template v-if="hasPosts">
     <VirtualList  :dataSources="posts"
-                  :dataComponent="DummyPost"
+                  :dataComponent="Post"
                   :keeps="50"
                   dataKey="id"/>
     </template>
