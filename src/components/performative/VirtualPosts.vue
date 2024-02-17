@@ -1,4 +1,5 @@
 <script setup>
+import VirtualList from "vue3-virtual-scroll-list"
 import { ref, onMounted, computed } from "vue"
 import DummyPost from "./DummyPost.vue"
 
@@ -18,9 +19,10 @@ onMounted(async() => {
 <template>
   <section>
     <template v-if="hasPosts">
-      <DummyPost v-for="post in posts"
-            :key="post.id"
-            :post="post"/>
+    <VirtualList  :dataSources="posts"
+                  :dataComponent="DummyPost"
+                  :keeps="50"
+                  dataKey="id"/>
     </template>
     <p  v-else>Loading ...</p>
   </section>

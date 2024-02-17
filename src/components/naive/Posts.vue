@@ -15,11 +15,12 @@ onMounted(async() => {
 
 <template>
   <section>
-    <template v-if="hasPosts">
+    <div  v-if="hasPosts"
+              style="max-height: 50vh; overflow-y: scroll;">
       <Post v-for="post in posts"
             :key="post.id"
             :post="post"/>
-    </template>
+    </div>
     <p  v-else>Loading ...</p>
   </section>
 </template>

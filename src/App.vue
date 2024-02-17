@@ -1,6 +1,6 @@
 <script setup>
 // import Posts from "./components/Posts.vue"
-import Posts from "./components/performative/Posts.vue"
+import VirtualPosts from "./components/performative/VirtualPosts.vue"
 </script>
 
 <template>
@@ -9,6 +9,6 @@ import Posts from "./components/performative/Posts.vue"
   </header>
   <main   style="margin-top: 1rem;"
           class="is-flex is-justify-content-center">
-    <Posts />
+    <VirtualPosts />
   </main>
 </template>d
