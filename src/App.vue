@@ -12,4 +12,4 @@ import Posts from "./components/naive/Posts.vue"
         class="is-flex is-justify-content-center">
     <Posts />
   </main>
-</template>d
+</template>
