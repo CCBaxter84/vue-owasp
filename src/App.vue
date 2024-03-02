@@ -8,7 +8,7 @@ import Posts from "./components/naive/Posts.vue"
   <header class="is-flex is-justify-content-center">
     <h1>My Posts</h1>
   </header>
-  <main style="margin-top: 1rem;"
+  <main style="margin-top: 1rem; margin-bottom: 1rem;"
         class="is-flex is-justify-content-center">
     <Posts />
   </main>
