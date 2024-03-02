@@ -1,3 +1,7 @@
+:root {
+  --text-color: aliceblue;
+}
+
 .is-flex {
   display: flex;
 }
@@ -14,8 +18,10 @@
   justify-content: center;
 }
 
+
+
 body {
   background-color: forestgreen;
-  color: aliceblue;
+  color: var(--text-color);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
