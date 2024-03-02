@@ -28,7 +28,7 @@ onMounted(async() => {
                 wrapTag="section"
                 style="max-height: 85vh; 
                   overflow-y: auto; 
-                  scrollbar-color: aliceblue transparent;
+                  scrollbar-color: var(--text-color) transparent;
                   scrollbar-width: thin"
                 itemTag="article"
                 itemClass="is-flex is-flex-direction-column"
