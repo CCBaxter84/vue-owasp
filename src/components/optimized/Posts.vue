@@ -24,12 +24,12 @@ onMounted(async() => {
   <VirtualList  v-if="hasPosts"
                 :dataSources="posts"
                 :dataComponent="Post"
-                :keeps="50"
                 dataKey="id"
                 wrapTag="section"
                 itemTag="article"
                 itemClass="is-flex is-flex-direction-column"
-                itemStyle="margin: 1rem 2rem;"/>
+                itemStyle="margin: 1rem 2rem;"
+                style="max-height: 80vh; overflow-y: auto;"/>
   <section  v-else>
     <article>
       <p>Loading ...</p>
