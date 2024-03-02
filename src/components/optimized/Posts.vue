@@ -26,10 +26,10 @@ onMounted(async() => {
                 :dataComponent="Post"
                 dataKey="id"
                 wrapTag="section"
+                style="max-height: 85vh; overflow-y: auto;"
                 itemTag="article"
                 itemClass="is-flex is-flex-direction-column"
-                itemStyle="margin: 1rem 2rem;"
-                style="max-height: 80vh; overflow-y: auto;"/>
+                itemStyle="margin: 1rem 2rem;"/>
   <section  v-else>
     <article>
       <p>Loading ...</p>
