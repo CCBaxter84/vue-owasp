@@ -26,7 +26,10 @@ onMounted(async() => {
                 :dataComponent="Post"
                 dataKey="id"
                 wrapTag="section"
-                style="max-height: 85vh; overflow-y: auto;"
+                style="max-height: 85vh; 
+                  overflow-y: auto; 
+                  scrollbar-color: aliceblue transparent;
+                  scrollbar-width: thin"
                 itemTag="article"
                 itemClass="is-flex is-flex-direction-column"
                 itemStyle="margin: 1rem 2rem;"/>
