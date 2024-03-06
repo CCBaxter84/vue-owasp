@@ -2,6 +2,12 @@
   --text-color: aliceblue;
 }
 
+body {
+  background-color: forestgreen;
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .is-flex {
   display: flex;
 }
@@ -16,12 +22,4 @@
 
 .is-justify-content-center {
   justify-content: center;
-}
-
-
-
-body {
-  background-color: forestgreen;
-  color: var(--text-color);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
