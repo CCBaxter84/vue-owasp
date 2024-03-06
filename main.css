@@ -1,9 +1,10 @@
 :root {
   --text-color: aliceblue;
+  --background-color: forestgreen
 }
 
 body {
-  background-color: forestgreen;
+  background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
