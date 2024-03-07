@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps({
+defineProps({
   post: {
     type: Object,
     required: true
@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
   <article  style="margin: 1rem 2rem;"
             class="is-flex is-flex-direction-column">
-    <h2>{{ props.post.title }}</h2>
-    <p>{{ props.post.body }}</p>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
   </article>
 </template>
