@@ -29,10 +29,7 @@ onMounted(async() => {
                 style="max-height: 85vh; 
                   overflow-y: auto; 
                   scrollbar-color: var(--text-color) transparent;
-                  scrollbar-width: thin"
-                itemTag="article"
-                itemClass="is-flex is-flex-direction-column"
-                itemStyle="margin: 1rem 2rem;"/>
+                  scrollbar-width: thin"/>
   <section  v-else>
     <article>
       <p>Loading ...</p>
